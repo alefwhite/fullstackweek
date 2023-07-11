@@ -1,0 +1,61 @@
+# SISTEMA DE RESERVA DE VIAGENS
+
+- Buscar Viagens
+    - Por localização, por data inicial, por orçamento máximo
+
+- Ver detalhes de uma viagem
+    - Fotos (4), descrição, foto principal, destaques, preço por noite, data, hóspedes
+
+- Reservar uma viagem
+    - Garantir que a data selecionada não foi reservada por outro usuário
+    - Garantir que o número máximo de hóspedes seja respeitado
+
+- Ver viagens já reservadas
+    - Pegar viagens do usuário
+
+- Cancelar essas viagens
+    - Ao cancelar uma viagem, data precisa ficar disponível
+
+
+
+# TECNOLOGIAS UTILIZADAS
+
+- Banco de dados -> (Postgres) 
+
+[           TRIP              ]
+[ Id (String) [PK]            ]
+[ Name (String)               ]
+[ Location (String)           ]
+[ Start Date (Date)           ]
+[ End Date (Date)             ]
+[ Price Per Day (Number)      ]   
+[ Cover Image (String)        ]
+[ Images URL (String[])       ]
+[ Highlights URL (String[])   ]
+[ Max Guests (Number)         ]
+
+[      TRIP RESERVATIONS      ]
+[ Id (String) [PK]            ]
+[ Trip ID (String)            ]
+[ User ID (String)            ]
+[ Start Date (Date)           ]
+[ End Date (Date)             ]
+[ Total Paid (Number)         ]   
+
+
+[        USERS                ]
+[ Id (String) [PK]            ]
+[ Name (String)               ]
+
+
+# Criando um projeto NextJs 13
+
+- npx create-next-app --user-yarn fsw-trips
+
+# Adicionando o prisma no projeto
+
+- npm install prisma --save-dev
+
+
+
+1:14:50 - Video 1
