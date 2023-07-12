@@ -56,6 +56,3 @@
 
 - npm install prisma --save-dev
 
-
-
-1:14:50 - Video 1
