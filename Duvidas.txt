@@ -56,3 +56,5 @@
 
 - npm install prisma --save-dev
 
+
+Aula 2 - 02:00:00 min de video
